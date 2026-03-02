@@ -64,7 +64,7 @@ export function PricingSection() {
           <p className="mt-4 text-muted-foreground">Commencez gratuitement et passez à la version Pro quand vous êtes prêt. Aucun frais caché.</p>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-5xl gap-8 lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-5xl gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan, index) => (
             <div
               key={index}

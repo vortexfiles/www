@@ -320,8 +320,8 @@ export function HeroSection() {
         <div className="mt-20 relative">
           <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 via-accent/10 to-accent/20 blur-3xl opacity-50" />
 
-          <div className="relative overflow-x-auto pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:mx-0 lg:px-0">
-            <div className="relative rounded-xl border border-border/60 bg-[#141414] backdrop-blur-sm overflow-hidden shadow-2xl min-w-[900px] lg:min-w-0">
+          <div className="relative">
+            <div className="relative rounded-xl border border-border/60 bg-[#141414] backdrop-blur-sm overflow-hidden shadow-2xl">
               <div className="flex items-center justify-between border-b border-border/60 px-4 py-3 bg-[#1a1a1a]">
                 <div className="flex items-center gap-3">
                   <div className="flex gap-1.5">
@@ -347,7 +347,7 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-4 gap-4 p-4 border-b border-border/60 bg-[#181818]">
+              <div className="grid grid-cols-2 gap-3 p-3 border-b border-border/60 bg-[#181818] sm:grid-cols-4 sm:gap-4 sm:p-4">
                 <div className="flex items-center gap-3 p-3 rounded-lg bg-[#1c1c1c] border border-border/40">
                   <div className="p-2 rounded-lg bg-green-500/10">
                     <Activity className="h-4 w-4 text-green-400" />
@@ -386,7 +386,7 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-4 divide-x divide-border/60 min-h-[420px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y divide-border/60 lg:divide-y-0 lg:divide-x">
                 <div className="p-5">
                   <h3 className="text-sm font-medium text-muted-foreground mb-4">Fichiers récents</h3>
                   <div className="space-y-2">
@@ -443,7 +443,7 @@ export function HeroSection() {
                   </div>
                 </div>
 
-                <div className="p-5">
+                <div className="hidden sm:block p-5">
                   <h3 className="text-sm font-medium text-muted-foreground mb-4">Types de fichiers</h3>
                   <div className="flex flex-col items-center">
                     <div className="relative w-36 h-36">
@@ -570,7 +570,7 @@ export function HeroSection() {
                   </div>
                 </div>
 
-                <div className="p-5">
+                <div className="hidden lg:block p-5">
                   <h3 className="text-sm font-medium text-muted-foreground mb-4">Aperçu rapide</h3>
                   <div className="rounded-lg bg-[#0d0d0d] border border-border/40 p-3 font-mono text-[11px] h-[340px] overflow-hidden">
                     <div
@@ -606,12 +606,6 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="lg:hidden flex justify-center mt-2">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span>Scroll to explore</span>
-              <ArrowRight className="h-3 w-3 animate-pulse" />
-            </div>
-          </div>
         </div>
       </div>
     </section>
