@@ -51,7 +51,7 @@ export function Navbar() {
               onClick={(e) => handleSmoothScroll(e, "#built-for-react")}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
             >
-              Cas d'usage
+              Cas d&apos;usage
             </a>
             <a
               href="#docs"
@@ -108,7 +108,7 @@ export function Navbar() {
               onClick={(e) => handleSmoothScroll(e, "#built-for-react")}
               className="text-sm text-muted-foreground cursor-pointer"
             >
-              Cas d'usage
+              Cas d&apos;usage
             </a>
             <a
               href="#docs"

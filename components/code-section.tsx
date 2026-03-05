@@ -80,7 +80,7 @@ export function CodeSection() {
         <div className="mx-auto max-w-2xl lg:text-center">
           <div className="flex items-center justify-center gap-2">
             <Blocks className="h-4 w-4 text-accent" />
-            <p className="text-sm font-medium uppercase tracking-wider text-accent">Cas d'usage</p>
+            <p className="text-sm font-medium uppercase tracking-wider text-accent">Cas d&apos;usage</p>
           </div>
           <h2 className="mt-2 font-mono text-3xl font-bold tracking-tight sm:text-4xl text-balance">
             Des scénarios concrets, une interface unique
