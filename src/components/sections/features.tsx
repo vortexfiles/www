@@ -125,7 +125,7 @@ export function Features() {
               </span>
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl leading-relaxed">
-              Une suite d'outils puissants conçus pour éliminer les frictions. 
+              Une suite d&apos;outils puissants conçus pour éliminer les frictions.
               Synchronisation instantanée, recherche unifiée et sécurité militaire.
             </p>
         </div>
