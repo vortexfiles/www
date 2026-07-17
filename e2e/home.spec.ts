@@ -23,7 +23,12 @@ test.describe("Home page", () => {
   test("has no console errors on load", async ({ page }) => {
     const errors: string[] = []
     page.on("console", (msg) => {
-      if (msg.type() === "error") errors.push(msg.text())
+      if (msg.type() !== "error") return
+      const url = msg.location().url
+      // @vercel/analytics requests /_vercel/insights/script.js, which only
+      // exists on Vercel hosting — it 404s on the self-hosted Docker deploy.
+      if (url.includes("/_vercel/")) return
+      errors.push(`${msg.text()} (${url})`)
     })
 
     await page.goto("/")
